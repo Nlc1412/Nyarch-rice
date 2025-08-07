@@ -1,0 +1,107 @@
+# --- Shortcuts ---
+# Reboot system
+super + ctrl + shift + Escape
+	kitty reboot
+# Reload bspwm configuration
+super + shift + Escape
+	bspc wm -r
+# Reload sxhkd configuration
+super + Escape
+	pkill -USR1 -x sxhkd
+# Reload kitty configuration
+super + shift + F1
+    pkill -USR1 -x kitty
+# Reload polybar configuration
+super + shift + F2
+	~/.config/polybar/launch.sh
+# Reload picom configuration
+super + shift + F3
+    pkill -HUP -x picom
+
+# Increase volume by 5%
+F12
+        pactl set-sink-volume @DEFAULT_SINK@ +5%
+# Decrease volume by 5%
+F11
+        pactl set-sink-volume @DEFAULT_SINK@ -5%
+# Fullscreen screenshot (saved to file)
+super + s
+	maim "$HOME/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%M-%S).png"
+# Selection screenshot (copied to clipboard)
+super + shift + s
+	maim -s | xclip -selection clipboard -t image/png
+# Lockscreen
+super + shift + l
+	betterlockscreen -l dimblur
+super + shift + x
+	clearine &
+
+# Close & Kill the focused window
+super + {_,shift + }q
+	bspc node -{c,k}
+# Launch terminal emulator
+super + Return
+	kitty
+# Launch app launcher
+super + d
+	rofi -show drun
+
+# Launch custom applications
+super + F1
+	firefox
+super + F2
+	kitty ranger
+super + F3
+	thunar $HOME
+alt + F1
+	kitty btop
+alt + F2
+	kitty --hold neofetch
+alt + F3
+	kitty cava
+alt + F4
+	kitty tenki
+alt + F5
+	kitty cmatrix
+
+# --- Desktop navigation & management ---
+# Switch to desktop 1–10
+super + {1-9,0}
+	bspc desktop -f '^{1-9,10}'
+# Move focused window to desktop 1–10
+super + shift + {1-9,0}
+	bspc node -d '^{1-9,10}'
+# Swap current desktop with desktop 1–10
+super + alt + {1-9,0}
+	bspc desktop -s '^{1-9,10}'
+
+# Focus movement between windows
+super + {Left,Down,Up,Right}
+	bspc node -f {west,south,north,east}
+# Swap current window with neighbor
+super + shift + {Left,Down,Up,Right}
+	bspc node -s {west,south,north,east}
+
+# Expand  window by moving edge outward (20px)
+super + alt + {Left,Down,Up,Right}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+# Contract window by moving edge inward (20px)
+super + alt + shift + {Left,Down,Up,Right}
+	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+# Toggle fullscreen for the focused window
+super + F11
+	bspc desktop -l next
+super + shift + F11
+	bspc node -t '~fullscreen'
+# Toggle floating for the focused window
+super + space
+#       bspc node -t 'floating'
+	bspc query -N -n focused.floating > /dev/null && bspc node -t tiled || bspc node -t floating
+# Toggle pseudo_tiled for the focused window
+super + F12
+	bspc node -t '~pseudo_tiled'
+
+# Set node flags: mark, lock, sticky, private, hidden, urgent
+super + ctrl + {m,l,s,p,h,u}
+	bspc node -g {marked,locked,sticky,private,hidden,urgent}
