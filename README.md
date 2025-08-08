@@ -1,6 +1,4 @@
-#Nyarch Rice
----
-BSPWM
+Nyarch Rice
 ---
 **File location:**
 - .config: /home
