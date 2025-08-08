@@ -1,6 +1,6 @@
 Nyarch Rice
 ---
-**File location:**
+**Files location:**
 - .config: /home
 - .local: /home
 - .xinitrc: /home
@@ -9,4 +9,4 @@ Nyarch Rice
 ---
 ![Screenshot](./Wallpaper%20&%20Screenshot/Screenshot.png)
 ---
-**Prototype: [Nyartix Rice](https://github.com/shikikan-neko08/nyartix-rice)**
+**Prototype: [Nyartix Rice (Shikikan-neko08)](https://github.com/shikikan-neko08/nyartix-rice)**
