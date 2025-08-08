@@ -1,5 +1,4 @@
 #Nyarch Rice
-Prototype: https://github.com/shikikan-neko08/nyartix-rice
 ---
 **File location:**
 - .config: /home
@@ -11,3 +10,5 @@ Prototype: https://github.com/shikikan-neko08/nyartix-rice
 **Applications & Packages:**
 ---
 ![Screenshot](./Wallpaper%20&%20Screenshot/Screenshot.png)
+---
+Prototype: https://github.com/shikikan-neko08/nyartix-rice
