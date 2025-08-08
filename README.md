@@ -1,4 +1,4 @@
-# Nyarch-rice
+Nyarch Rice
 Prototype: https://github.com/shikikan-neko08/nyartix-rice
 ---
 File location:
@@ -7,5 +7,8 @@ File location:
 - .xinitrc: /home
 - .zshrc: /home
 - rofi-bluetooth: /usr/bin
+---
+
+Applications & Packages:
 ---
 ![Screenshot](./Wallpaper%20&%20Screenshot/Screenshot.png)
