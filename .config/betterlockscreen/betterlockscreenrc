@@ -1,0 +1,19 @@
+# configuration file for betterlockscreen
+
+insidecolor=ffffffff
+ringcolor=E9E3E5
+keyhlcolor=d23c3dff
+bshlcolor=d23c3dff
+separatorcolor=ffffffff
+insidevercolor=ffffffff
+insidewrongcolor=d23c3dff
+ringvercolor=ffffffff
+ringwrongcolor=ffffffff
+verifcolor=ffffffff
+timecolor=E9E3E5
+datecolor=E9E3E5
+loginbox=ffffffff
+font="Noto Sans CJK JP"
+locktext='Nya~ Neko? Shikikan!'
+lock_timeout=20
+time_format='%H:%M:%S'
