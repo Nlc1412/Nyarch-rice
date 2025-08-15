@@ -1,7 +1,4 @@
 # --- Shortcuts ---
-# Reboot system
-super + ctrl + shift + Escape
-	reboot &
 # Reload bspwm configuration
 super + shift + Escape
 	bspc wm -r
@@ -31,10 +28,23 @@ super + s
 super + shift + s
 	maim -s | xclip -selection clipboard -t image/png
 # Lockscreen
-super + shift + l
+Escape + shift + F1
 	betterlockscreen -l dimblur
-super + shift + x
-	clearine &
+# Suspend
+Escape + shift + F2
+	systemctl suspend
+# Hibernate
+Escape + shift + F3
+	systemctl hibernate
+# Restart
+Escape + shift + F4
+	reboot &
+# Shutdown
+Escape + shift + F5
+	poweroff &
+# Logout
+Escape + shift + F6
+	bspc quit
 
 # Close & Kill the focused window
 super + {_,shift + }q
@@ -47,6 +57,8 @@ super + d
 	rofi -show drun
 
 # Launch custom applications
+Escape + ctrl
+	clearine &
 super + F1
 	firefox
 super + F2

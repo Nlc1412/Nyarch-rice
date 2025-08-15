@@ -1,23 +1,26 @@
 DO NOT DELETE THIS LINE*** version=1 ***
 --:•
-.-:–
+->:→
+-^:↑
+-v:↓
 .#:≠
 .%0:‰
-./:÷
-._:—
-.~~:≈
 .+-:±
+.-:–
 .-+:±
+./:÷
 .<=>:⇔
 .=<:≤
 .=>:⇒
 .>=:≥
+._:—
+.~~:≈
 .căn:√
 .cắt nhau:∩
 .delta:∆
-.độ:º
 .đồng dạng:ᔕ
 .đồng dư:≡
+.độ:º
 .forall:∀
 .góc:∠
 .hết:⋮
@@ -40,14 +43,12 @@ DO NOT DELETE THIS LINE*** version=1 ***
 .thuộc:∈
 .tỉ lệ:∝
 .trùng nhau:≡
-.vô cực:∞
 .vô cùng:∞
+.vô cực:∞
 .vô hạn:∞
 .vô số:∞
 .x:×
--^:↑
 <-:←
-->:→
 bh:bây giờ
 bn:bao nhiêu
 bt:biết
@@ -58,7 +59,6 @@ cx:cũng
 đc:được
 đk:đúng không
 đr:đúng rồi
-h:giờ
 hc:học
 ko:không
 lm:làm
@@ -67,7 +67,5 @@ nc:nước
 ngc:ngược
 nhx:những
 nx:nữa
-r:rồi
 trc:trước
 trl:trả lời
--v:↓
