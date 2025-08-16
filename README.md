@@ -1,5 +1,4 @@
-#Nyarch Rice
-Prototype: https://github.com/shikikan-neko08/nyartix-rice
+Nyarch Rice
 ---
 File location:
 - .config: /home
@@ -9,9 +8,7 @@ File location:
 - logind.conf: /etc/systemd
 - rofi-bluetooth: /usr/bin
 ---
-
-Applications & Packages:
----
+Prototype: ![Nyartix Rice](https://github.com/shikikan-neko08/nyartix-rice)
 ![Screenshot1](./Wallpaper%20&%20Screenshot/Screenshot1.jpg)
 ![Screenshot2](./Wallpaper%20&%20Screenshot/Screenshot2.jpg)
 ![Screenshot3](./Wallpaper%20&%20Screenshot/Screenshot3.jpg)
