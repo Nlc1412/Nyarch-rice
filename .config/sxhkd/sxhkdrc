@@ -11,6 +11,9 @@ super + shift + F1
 # Reload polybar configuration
 super + shift + F2
 	~/.config/polybar/launch.sh
+# Show/ Hidden polybar
+ctrl + Tab
+	~/.config/polybar/scripts/toggle_polybar.sh
 # Reload picom configuration
 super + shift + F3
     pkill -HUP -x picom

@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+BAR="Nya!"
+
 # Kill all existing polybar instances
 killall -q polybar
 
@@ -16,7 +18,7 @@ MONITORS=$(xrandr --query | grep " connected" | cut -d" " -f1)
 for m in $MONITORS; do
   # Set the MONITOR environment variable for each Polybar instance
   echo "Launching on monitor: $m" | tee -a /tmp/polybar-nya.log
-  MONITOR=$m polybar Nya! 2>&1 | tee -a /tmp/polybar-nya.log &
+  MONITOR=$m polybar "$BAR" 2>&1 | tee -a /tmp/polybar-nya.log &
 done
 
 # Wait for a moment to allow Polybar instances to start before checking their status.
