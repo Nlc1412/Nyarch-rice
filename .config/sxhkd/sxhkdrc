@@ -17,6 +17,9 @@ ctrl + Tab
 # Reload picom configuration
 super + shift + F3
     pkill -HUP -x picom
+# Enable & Disable touchpad
+F9
+        ~/.config/toggle_touchpad.sh
 
 # Increase volume by 5%
 F12
@@ -24,6 +27,15 @@ F12
 # Decrease volume by 5%
 F11
         pactl set-sink-volume @DEFAULT_SINK@ -5%
+# Mute volume
+F10
+	pactl set-sink-mute @DEFAULT_SINK@ toggle
+# Increase brightness by 5%
+F6
+	brightnessctl set +5%
+# Decrease brightness by 5%
+F5
+	brightnessctl set 5%-
 # Fullscreen screenshot (saved to file)
 super + s
 	maim "$HOME/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%M-%S).png"

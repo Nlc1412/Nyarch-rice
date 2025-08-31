@@ -33,4 +33,4 @@ bspc config pointer_action3 resize_corner
 # Autostart: must be the last command
 $HOME/.config/polybar/launch.sh &
 picom &
-feh --bg-fill ~/Pictures/Wallpapers/light_blue_neko.png
+feh --bg-fill ~/Pictures/Wallpapers/Anime/light_blue_neko.png
